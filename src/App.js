@@ -11,9 +11,25 @@ function App() {
   const [filteredMovies, setFilteredMovies] = useState([]);
   const [checked, setChecked] = useState(false);
 
-  const localFav  = JSON.parse(localStorage.getItem('favorites')) || [];
-  const [favorites, setFavorites] = useState(localFav);
+  const localFavorites  = JSON.parse(localStorage.getItem('favorites')) || [];
+  const [favorites, setFavorites] = useState(localFavorites);
 
+  let localMovies = [];
+  if (!localStorage.getItem('movies')) {
+    localStorage.setItem('movies', JSON.stringify(data));
+    localMovies = JSON.parse(localStorage.getItem('movies'));
+  } else {
+    localMovies = JSON.parse(localStorage.getItem('movies'));
+  }
+
+  // save favorites on localStorage
+  useEffect(() => {
+    if (favorites) {
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
+  })
+
+  // filter search movies
   useEffect(() => {
     setFilteredMovies(
       data.filter((movie) => 
@@ -26,7 +42,7 @@ function App() {
     <MyContext.Provider value={{ search, setSearch, filteredMovies, setFilteredMovies, checked, setChecked, favorites, setFavorites }}>
       <Header />
       <SearchBar />
-      <MovieList movies={data} />
+      <MovieList movies={localMovies} />
     </MyContext.Provider>
   );
 }
