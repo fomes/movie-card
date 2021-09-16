@@ -43,7 +43,7 @@ export default function AddMovie() {
       <div className="main">
         <div className="main-center">
 
-          <h4>Novo Filme</h4>
+          <h4>New Movie</h4>
           <form className="" method="post" action="#">
 
             <div className="form-group">
@@ -120,14 +120,14 @@ export default function AddMovie() {
               type="button"
               className="btn btn-dark"
               onClick={handleAddMovie}>
-              Adicionar
+              Add
             </button>
 
             <button
               type="button"
               className="btn btn-dark"
               onClick={handleBack}>
-              Voltar
+              Back
             </button>
 
           </form>
