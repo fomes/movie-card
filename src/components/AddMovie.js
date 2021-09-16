@@ -33,7 +33,7 @@ export default function AddMovie() {
     }
 
   }
-  
+
   const handleBack = () => {
     history.push('/');
   }
@@ -47,7 +47,7 @@ export default function AddMovie() {
           <form className="" method="post" action="#">
 
             <div className="form-group">
-              <label for="title">Movie Name</label>
+              <label htmlFor="title">Movie Name</label>
               <div className="input-group">
                 <input
                   type="text"
@@ -61,7 +61,7 @@ export default function AddMovie() {
             </div>
 
             <div className="form-group">
-              <label for="subtitle">Subtitle</label>
+              <label htmlFor="subtitle">Subtitle</label>
               <div className="input-group">
                 <input
                   type="text"
@@ -75,7 +75,7 @@ export default function AddMovie() {
             </div>
 
             <div className="form-group">
-              <label for="sinopse">Sinopse</label>
+              <label htmlFor="sinopse">Sinopse</label>
               <div className="input-group">
                 <textarea
                   type="text"
@@ -89,7 +89,7 @@ export default function AddMovie() {
             </div>
 
             <div className="form-group">
-              <label for="rating">Rating</label>
+              <label htmlFor="rating">Rating</label>
               <div className="input-group">
                 <input
                   type="number"
@@ -103,7 +103,7 @@ export default function AddMovie() {
             </div>
 
             <div className="form-group">
-              <label for="image">URL Front Cover</label>
+              <label htmlFor="image">URL Front Cover</label>
               <div className="input-group">
                 <input
                   type="text"
