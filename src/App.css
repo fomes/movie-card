@@ -1,9 +1,16 @@
+body {
+  background-color: rgb(61, 61, 61);
+  color: white;
+  width: 99vw;
+}
+
 .movie-card {
   margin: 10px;
   padding: 10px;
   background-color: #74EBD5;
   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
   height: 513px;
+  color: black;
 }
 
 .img-rating {
@@ -25,4 +32,40 @@ textarea {
 
 .card-img-top {
   height: 142px;
+}
+
+/* https://bootsnipp.com/snippets/aMpMD */
+
+.main {
+  padding: 40px 0;
+}
+
+.main input, .main input::-webkit-input-placeholder {
+  padding-top: 3px;
+}
+
+.main-center {
+  margin-top: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 10px 40px;
+  background: #009edf;
+  color: #FFF;
+  text-shadow: none;
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.31);
+}
+
+span.input-group-addon i {
+  color: #009edf;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+.btn {
+  margin-bottom: 8px;
+  margin-right: 4px;
 }

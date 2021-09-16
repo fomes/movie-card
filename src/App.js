@@ -15,9 +15,11 @@ function App() {
   const [favorites, setFavorites] = useState(localFavorites);
 
   let localMovies = [];
+
   if (!localStorage.getItem('movies')) {
     localStorage.setItem('movies', JSON.stringify(data));
     localMovies = JSON.parse(localStorage.getItem('movies'));
+
   } else {
     localMovies = JSON.parse(localStorage.getItem('movies'));
   }
