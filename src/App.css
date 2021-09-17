@@ -18,7 +18,7 @@ body {
   flex-direction: column;
 }
 
-.star, .trash {
+.star, .trash, span {
   cursor: pointer;
 }
 
