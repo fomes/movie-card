@@ -62,10 +62,14 @@ span.input-group-addon i {
 }
 
 .form-group {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .btn {
   margin-bottom: 8px;
-  margin-right: 4px;
+  margin-right: 6px;
+}
+
+.searchbar {
+  margin-bottom: 20px;
 }

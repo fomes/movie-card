@@ -119,15 +119,15 @@ export default function AddMovie() {
             <button
               type="button"
               className="btn btn-dark"
-              onClick={handleAddMovie}>
-              Add
+              onClick={handleBack}>
+              Back
             </button>
 
             <button
               type="button"
-              className="btn btn-dark"
-              onClick={handleBack}>
-              Back
+              className="btn btn-warning"
+              onClick={handleAddMovie}>
+              Add
             </button>
 
           </form>

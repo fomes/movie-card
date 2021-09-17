@@ -12,7 +12,7 @@ export default function SearchBar() {
   }
 
   return (
-    <div className="text-center">
+    <div className="text-center searchbar">
       <button className="header-item btn btn-info" onClick={handleRoute}>Add Movie</button>
       <input type="text" className="header-item" placeholder="search for name" onChange={(e) => setSearch(e.target.value)} />
       <input type="checkbox" className="header-item" checked={checked} onChange={(e) => setChecked(e.target.checked)}/>
